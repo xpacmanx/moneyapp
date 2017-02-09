@@ -1,0 +1,9 @@
+.modal
+  span.fa.fa-close.btn-close
+  h2.modal-title Получить каталог
+  .modal-body
+    form#send(action="/send.php" mehtod="post")
+      input#fio(type="text" name="fio" placeholder="ФИО" required)
+      input#email(type="email" name="email" placeholder="Email")
+      input#tel(type="tel" name="tel" placeholder="Телефон" required)
+      button.btn(type="submit") Получить каталог

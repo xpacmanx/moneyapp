@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MoneyApp</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css?v=269550530cc127b6aa5a35925a7de6ce" rel="stylesheet">
+    <link href="assets/css/style.css?v=ee8165d4715f85e47cf61949c0901406" rel="stylesheet">
+  </head>
+  <body>
+    <div class="chart" id="today">
+      <div class="chart__date">Сегодня</div>
+      <div class="chart__summ">
+        <div class="chart__summ-descr">Можно потратить</div>
+        <div class="chart__summ-count">199</div><i class="fa fa-rub"></i>
+      </div>
+      <div class="chart__pagination">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot active"></div>
+      </div>
+      <div class="chart__save">
+        <div class="chart__save-descr">Отложено</div>
+        <div class="chart__save-summ"><span class="cart__save-summ-count">4 000</span><i class="fa fa-rub"></i></div>
+      </div>
+    </div>
+    <div class="history">
+      <div class="history__title">История операций</div>
+      <div class="history__items">
+        <div class="history__item add"><img class="history__item-img" src="assets/img/logo.jpg">
+          <div class="history__item-summ">100 <i class="fa fa-rub"></i></div>
+          <div class="history__item-title">Кодельная</div>
+          <div class="history__item-comment">Оплата хостинга</div>
+        </div>
+        <div class="history__item remove"><img class="history__item-img" src="assets/img/logo.jpg">
+          <div class="history__item-summ">100 <i class="fa fa-rub"></i></div>
+          <div class="history__item-title">Кодельная</div>
+          <div class="history__item-comment">Оплата хостинга</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal"><span class="fa fa-close btn-close"></span>
+      <h2 class="modal-title">Получить каталог</h2>
+      <div class="modal-body">
+        <form id="send" action="/send.php" mehtod="post">
+          <input id="fio" type="text" name="fio" placeholder="ФИО" required>
+          <input id="email" type="email" name="email" placeholder="Email">
+          <input id="tel" type="tel" name="tel" placeholder="Телефон" required>
+          <button class="btn" type="submit">Получить каталог</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js?v=44129a38b53be0fa07af3787460e8b75"></script>
+    <script src="assets/js/scripts.js?v=f94399b715c4942a07916473fc0367a1"></script>
+  </body>
+</html>
